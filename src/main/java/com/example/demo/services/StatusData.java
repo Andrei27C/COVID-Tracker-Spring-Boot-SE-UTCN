@@ -283,13 +283,13 @@ public class StatusData {
          
           try {
           
-            String url = "https://api.covid19api.com/summary";
+            String url = "https://jsonkeeper.com/b/20FC";
             URL obj = new URL(url);
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("User-Agent", "Mozilla/5.0");
             BufferedReader in = new BufferedReader(
-                new InputStreamReader(con.getInputStream()));
+                      new InputStreamReader(con.getInputStream()));
             String inputLine;
             StringBuffer response = new StringBuffer();
             while ((inputLine = in .readLine()) != null) {
